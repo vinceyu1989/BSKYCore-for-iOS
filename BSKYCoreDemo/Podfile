@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+target 'BSKYCoreDemo' do
+
+pod 'GTMBase64', '~> 1.0.0'
+pod 'YTKNetwork', '~> 2.0.0'
+pod 'YYCategories', '~> 1.0.4'
+pod 'SAMKeychain', '~> 1.5.1'
+
+end

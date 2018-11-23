@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A9742B1F21D11400C060F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9742A1F21D11400C060F4 /* main.m */; };
+		18A9742E1F21D11400C060F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9742D1F21D11400C060F4 /* AppDelegate.m */; };
+		18A974311F21D11400C060F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A974301F21D11400C060F4 /* ViewController.m */; };
+		18A974341F21D11400C060F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A974321F21D11400C060F4 /* Main.storyboard */; };
+		18A974361F21D11400C060F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A974351F21D11400C060F4 /* Assets.xcassets */; };
+		18A974391F21D11400C060F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A974371F21D11400C060F4 /* LaunchScreen.storyboard */; };
+		18A974441F21D11400C060F4 /* BSKYCoreDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A974431F21D11400C060F4 /* BSKYCoreDemoTests.m */; };
+		18A9744F1F21D11400C060F4 /* BSKYCoreDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9744E1F21D11400C060F4 /* BSKYCoreDemoUITests.m */; };
+		18C9F1D81F25A3EC00561AF9 /* CLLocation+BSKY.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1B91F25A3EC00561AF9 /* CLLocation+BSKY.m */; };
+		18C9F1D91F25A3EC00561AF9 /* UIActionSheet+BSKY.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1BB1F25A3EC00561AF9 /* UIActionSheet+BSKY.m */; };
+		18C9F1DA1F25A3EC00561AF9 /* UIAlertView+BSKY.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1BD1F25A3EC00561AF9 /* UIAlertView+BSKY.m */; };
+		18C9F1DB1F25A3EC00561AF9 /* UIColor+BSKY.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1BF1F25A3EC00561AF9 /* UIColor+BSKY.m */; };
+		18C9F1DC1F25A3EC00561AF9 /* UIFont+BSKY.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1C11F25A3EC00561AF9 /* UIFont+BSKY.m */; };
+		18C9F1DD1F25A3EC00561AF9 /* UIView+BSKY.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1C31F25A3EC00561AF9 /* UIView+BSKY.m */; };
+		18C9F1DE1F25A3EC00561AF9 /* BSLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1C51F25A3EC00561AF9 /* BSLocationProvider.m */; };
+		18C9F1DF1F25A3EC00561AF9 /* AES128Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1CA1F25A3EC00561AF9 /* AES128Helper.m */; };
+		18C9F1E01F25A3EC00561AF9 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1CE1F25A3EC00561AF9 /* NSArray+Safe.m */; };
+		18C9F1E11F25A3EC00561AF9 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1D01F25A3EC00561AF9 /* NSDictionary+Safe.m */; };
+		18C9F1E21F25A3EC00561AF9 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1D21F25A3EC00561AF9 /* NSMutableArray+Safe.m */; };
+		18C9F1E31F25A3EC00561AF9 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1D41F25A3EC00561AF9 /* NSMutableDictionary+Safe.m */; };
+		18C9F1E41F25A3EC00561AF9 /* NSObject+ImpChangeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9F1D61F25A3EC00561AF9 /* NSObject+ImpChangeTool.m */; };
+		64DB3D1ADB8337FC91D48E02 /* libPods-BSKYCoreDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EF25638C62D27EB2ED3470 /* libPods-BSKYCoreDemo.a */; };
+		B31515631F25EE65001F8140 /* BSNetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B31515621F25EE65001F8140 /* BSNetConfig.m */; };
+		B31515661F25F08C001F8140 /* BSBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B31515651F25F08C001F8140 /* BSBaseRequest.m */; };
+		B315156E1F2601C7001F8140 /* BSClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B315156D1F2601C7001F8140 /* BSClientManager.m */; };
+		B31515831F271629001F8140 /* BSDemoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B31515821F271629001F8140 /* BSDemoRequest.m */; };
+		B33286461F29C63900278914 /* XPersistentThreadPool.m in Sources */ = {isa = PBXBuildFile; fileRef = B33286451F29C63900278914 /* XPersistentThreadPool.m */; };
+		B332864A1F2B2DBF00278914 /* BSRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B33286491F2B2DBF00278914 /* BSRouter.m */; };
+		B392EC331F25EB9B000104BF /* NSString+BSKY.m in Sources */ = {isa = PBXBuildFile; fileRef = B392EC321F25EB9B000104BF /* NSString+BSKY.m */; };
+		B396D9FF1F8CAB4F00896F3D /* UIViewController+BSKY.m in Sources */ = {isa = PBXBuildFile; fileRef = B396D9FD1F8CAB4E00896F3D /* UIViewController+BSKY.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18A974401F21D11400C060F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A9741E1F21D11400C060F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A974251F21D11400C060F4;
+			remoteInfo = BSKYCoreDemo;
+		};
+		18A9744B1F21D11400C060F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A9741E1F21D11400C060F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A974251F21D11400C060F4;
+			remoteInfo = BSKYCoreDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18A974261F21D11400C060F4 /* BSKYCoreDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSKYCoreDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A9742A1F21D11400C060F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18A9742C1F21D11400C060F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18A9742D1F21D11400C060F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18A9742F1F21D11400C060F4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18A974301F21D11400C060F4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18A974331F21D11400C060F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18A974351F21D11400C060F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18A974381F21D11400C060F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18A9743A1F21D11400C060F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A9743F1F21D11400C060F4 /* BSKYCoreDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSKYCoreDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A974431F21D11400C060F4 /* BSKYCoreDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSKYCoreDemoTests.m; sourceTree = "<group>"; };
+		18A974451F21D11400C060F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A9744A1F21D11400C060F4 /* BSKYCoreDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSKYCoreDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A9744E1F21D11400C060F4 /* BSKYCoreDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSKYCoreDemoUITests.m; sourceTree = "<group>"; };
+		18A974501F21D11400C060F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A974621F21D33200C060F4 /* BSKYCoreDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSKYCoreDemo.pch; sourceTree = "<group>"; };
+		18C9F1B71F25A3EC00561AF9 /* BSCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCategories.h; sourceTree = "<group>"; };
+		18C9F1B81F25A3EC00561AF9 /* CLLocation+BSKY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+BSKY.h"; sourceTree = "<group>"; };
+		18C9F1B91F25A3EC00561AF9 /* CLLocation+BSKY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+BSKY.m"; sourceTree = "<group>"; };
+		18C9F1BA1F25A3EC00561AF9 /* UIActionSheet+BSKY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+BSKY.h"; sourceTree = "<group>"; };
+		18C9F1BB1F25A3EC00561AF9 /* UIActionSheet+BSKY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+BSKY.m"; sourceTree = "<group>"; };
+		18C9F1BC1F25A3EC00561AF9 /* UIAlertView+BSKY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+BSKY.h"; sourceTree = "<group>"; };
+		18C9F1BD1F25A3EC00561AF9 /* UIAlertView+BSKY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+BSKY.m"; sourceTree = "<group>"; };
+		18C9F1BE1F25A3EC00561AF9 /* UIColor+BSKY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BSKY.h"; sourceTree = "<group>"; };
+		18C9F1BF1F25A3EC00561AF9 /* UIColor+BSKY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BSKY.m"; sourceTree = "<group>"; };
+		18C9F1C01F25A3EC00561AF9 /* UIFont+BSKY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+BSKY.h"; sourceTree = "<group>"; };
+		18C9F1C11F25A3EC00561AF9 /* UIFont+BSKY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+BSKY.m"; sourceTree = "<group>"; };
+		18C9F1C21F25A3EC00561AF9 /* UIView+BSKY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BSKY.h"; sourceTree = "<group>"; };
+		18C9F1C31F25A3EC00561AF9 /* UIView+BSKY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BSKY.m"; sourceTree = "<group>"; };
+		18C9F1C41F25A3EC00561AF9 /* BSLocationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLocationProvider.h; sourceTree = "<group>"; };
+		18C9F1C51F25A3EC00561AF9 /* BSLocationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLocationProvider.m; sourceTree = "<group>"; };
+		18C9F1C91F25A3EC00561AF9 /* AES128Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES128Helper.h; sourceTree = "<group>"; };
+		18C9F1CA1F25A3EC00561AF9 /* AES128Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES128Helper.m; sourceTree = "<group>"; };
+		18C9F1CB1F25A3EC00561AF9 /* BSLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLib.h; sourceTree = "<group>"; };
+		18C9F1CD1F25A3EC00561AF9 /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		18C9F1CE1F25A3EC00561AF9 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		18C9F1CF1F25A3EC00561AF9 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
+		18C9F1D01F25A3EC00561AF9 /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
+		18C9F1D11F25A3EC00561AF9 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
+		18C9F1D21F25A3EC00561AF9 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
+		18C9F1D31F25A3EC00561AF9 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
+		18C9F1D41F25A3EC00561AF9 /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
+		18C9F1D51F25A3EC00561AF9 /* NSObject+ImpChangeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ImpChangeTool.h"; sourceTree = "<group>"; };
+		18C9F1D61F25A3EC00561AF9 /* NSObject+ImpChangeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ImpChangeTool.m"; sourceTree = "<group>"; };
+		18C9F1D71F25A3EC00561AF9 /* SafeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeTool.h; sourceTree = "<group>"; };
+		B31515611F25EE65001F8140 /* BSNetConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSNetConfig.h; sourceTree = "<group>"; };
+		B31515621F25EE65001F8140 /* BSNetConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSNetConfig.m; sourceTree = "<group>"; };
+		B31515641F25F08C001F8140 /* BSBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBaseRequest.h; sourceTree = "<group>"; };
+		B31515651F25F08C001F8140 /* BSBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBaseRequest.m; sourceTree = "<group>"; };
+		B31515671F25F0A9001F8140 /* BSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSKit.h; sourceTree = "<group>"; };
+		B315156C1F2601C7001F8140 /* BSClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClientManager.h; sourceTree = "<group>"; };
+		B315156D1F2601C7001F8140 /* BSClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClientManager.m; sourceTree = "<group>"; };
+		B31515811F271629001F8140 /* BSDemoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDemoRequest.h; sourceTree = "<group>"; };
+		B31515821F271629001F8140 /* BSDemoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDemoRequest.m; sourceTree = "<group>"; };
+		B33286441F29C63900278914 /* XPersistentThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPersistentThreadPool.h; sourceTree = "<group>"; };
+		B33286451F29C63900278914 /* XPersistentThreadPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPersistentThreadPool.m; sourceTree = "<group>"; };
+		B33286481F2B2DBF00278914 /* BSRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSRouter.h; sourceTree = "<group>"; };
+		B33286491F2B2DBF00278914 /* BSRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSRouter.m; sourceTree = "<group>"; };
+		B34000D71F68CEAB00873A6E /* BSKYCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSKYCore.h; sourceTree = "<group>"; };
+		B392EC311F25EB9B000104BF /* NSString+BSKY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BSKY.h"; sourceTree = "<group>"; };
+		B392EC321F25EB9B000104BF /* NSString+BSKY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BSKY.m"; sourceTree = "<group>"; };
+		B396D9FD1F8CAB4E00896F3D /* UIViewController+BSKY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BSKY.m"; sourceTree = "<group>"; };
+		B396D9FE1F8CAB4E00896F3D /* UIViewController+BSKY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BSKY.h"; sourceTree = "<group>"; };
+		CC9F10E01405698E8FDF3AA8 /* Pods-BSKYCoreDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSKYCoreDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSKYCoreDemo/Pods-BSKYCoreDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F9EF25638C62D27EB2ED3470 /* libPods-BSKYCoreDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BSKYCoreDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC50FEEE7B37BD26134CDF3 /* Pods-BSKYCoreDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSKYCoreDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BSKYCoreDemo/Pods-BSKYCoreDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18A974231F21D11400C060F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DB3D1ADB8337FC91D48E02 /* libPods-BSKYCoreDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A9743C1F21D11400C060F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A974471F21D11400C060F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A9741D1F21D11400C060F4 = {
+			isa = PBXGroup;
+			children = (
+				18C9F1B41F25A3EC00561AF9 /* BSKYCorePods */,
+				18A974281F21D11400C060F4 /* BSKYCoreDemo */,
+				18A974421F21D11400C060F4 /* BSKYCoreDemoTests */,
+				18A9744D1F21D11400C060F4 /* BSKYCoreDemoUITests */,
+				18A974271F21D11400C060F4 /* Products */,
+				C357F6CB28310F65C0BF0BDE /* Pods */,
+				3D71E0A92259A29B62F021E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18A974271F21D11400C060F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A974261F21D11400C060F4 /* BSKYCoreDemo.app */,
+				18A9743F1F21D11400C060F4 /* BSKYCoreDemoTests.xctest */,
+				18A9744A1F21D11400C060F4 /* BSKYCoreDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18A974281F21D11400C060F4 /* BSKYCoreDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B31515801F271615001F8140 /* NetworkDemo */,
+				18A9742C1F21D11400C060F4 /* AppDelegate.h */,
+				18A9742D1F21D11400C060F4 /* AppDelegate.m */,
+				18A9742F1F21D11400C060F4 /* ViewController.h */,
+				18A974301F21D11400C060F4 /* ViewController.m */,
+				18A974321F21D11400C060F4 /* Main.storyboard */,
+				18A974351F21D11400C060F4 /* Assets.xcassets */,
+				18A974371F21D11400C060F4 /* LaunchScreen.storyboard */,
+				18A9743A1F21D11400C060F4 /* Info.plist */,
+				18A974291F21D11400C060F4 /* Supporting Files */,
+			);
+			path = BSKYCoreDemo;
+			sourceTree = "<group>";
+		};
+		18A974291F21D11400C060F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18A9742A1F21D11400C060F4 /* main.m */,
+				18A974621F21D33200C060F4 /* BSKYCoreDemo.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18A974421F21D11400C060F4 /* BSKYCoreDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				18A974431F21D11400C060F4 /* BSKYCoreDemoTests.m */,
+				18A974451F21D11400C060F4 /* Info.plist */,
+			);
+			path = BSKYCoreDemoTests;
+			sourceTree = "<group>";
+		};
+		18A9744D1F21D11400C060F4 /* BSKYCoreDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18A9744E1F21D11400C060F4 /* BSKYCoreDemoUITests.m */,
+				18A974501F21D11400C060F4 /* Info.plist */,
+			);
+			path = BSKYCoreDemoUITests;
+			sourceTree = "<group>";
+		};
+		18C9F1B41F25A3EC00561AF9 /* BSKYCorePods */ = {
+			isa = PBXGroup;
+			children = (
+				B34000D71F68CEAB00873A6E /* BSKYCore.h */,
+				18C9F1B51F25A3EC00561AF9 /* BSKit */,
+				18C9F1C61F25A3EC00561AF9 /* BSLib */,
+			);
+			name = BSKYCorePods;
+			path = ../BSKYCorePods;
+			sourceTree = "<group>";
+		};
+		18C9F1B51F25A3EC00561AF9 /* BSKit */ = {
+			isa = PBXGroup;
+			children = (
+				B31515671F25F0A9001F8140 /* BSKit.h */,
+				B33286471F2B2DBF00278914 /* BSRouter */,
+				B31515601F25EDA1001F8140 /* Network */,
+				18C9F1B61F25A3EC00561AF9 /* BSCategories */,
+				18C9F1C41F25A3EC00561AF9 /* BSLocationProvider.h */,
+				18C9F1C51F25A3EC00561AF9 /* BSLocationProvider.m */,
+			);
+			path = BSKit;
+			sourceTree = "<group>";
+		};
+		18C9F1B61F25A3EC00561AF9 /* BSCategories */ = {
+			isa = PBXGroup;
+			children = (
+				18C9F1B71F25A3EC00561AF9 /* BSCategories.h */,
+				B396D9FE1F8CAB4E00896F3D /* UIViewController+BSKY.h */,
+				B396D9FD1F8CAB4E00896F3D /* UIViewController+BSKY.m */,
+				18C9F1B81F25A3EC00561AF9 /* CLLocation+BSKY.h */,
+				18C9F1B91F25A3EC00561AF9 /* CLLocation+BSKY.m */,
+				18C9F1BA1F25A3EC00561AF9 /* UIActionSheet+BSKY.h */,
+				18C9F1BB1F25A3EC00561AF9 /* UIActionSheet+BSKY.m */,
+				18C9F1BC1F25A3EC00561AF9 /* UIAlertView+BSKY.h */,
+				18C9F1BD1F25A3EC00561AF9 /* UIAlertView+BSKY.m */,
+				18C9F1BE1F25A3EC00561AF9 /* UIColor+BSKY.h */,
+				18C9F1BF1F25A3EC00561AF9 /* UIColor+BSKY.m */,
+				18C9F1C01F25A3EC00561AF9 /* UIFont+BSKY.h */,
+				18C9F1C11F25A3EC00561AF9 /* UIFont+BSKY.m */,
+				18C9F1C21F25A3EC00561AF9 /* UIView+BSKY.h */,
+				18C9F1C31F25A3EC00561AF9 /* UIView+BSKY.m */,
+				B392EC311F25EB9B000104BF /* NSString+BSKY.h */,
+				B392EC321F25EB9B000104BF /* NSString+BSKY.m */,
+			);
+			path = BSCategories;
+			sourceTree = "<group>";
+		};
+		18C9F1C61F25A3EC00561AF9 /* BSLib */ = {
+			isa = PBXGroup;
+			children = (
+				18C9F1CB1F25A3EC00561AF9 /* BSLib.h */,
+				B33286431F29C63900278914 /* ThreadPool */,
+				18C9F1C71F25A3EC00561AF9 /* AES128Helper */,
+				18C9F1CC1F25A3EC00561AF9 /* SafeTools */,
+			);
+			path = BSLib;
+			sourceTree = "<group>";
+		};
+		18C9F1C71F25A3EC00561AF9 /* AES128Helper */ = {
+			isa = PBXGroup;
+			children = (
+				18C9F1C81F25A3EC00561AF9 /* Encrypt */,
+			);
+			path = AES128Helper;
+			sourceTree = "<group>";
+		};
+		18C9F1C81F25A3EC00561AF9 /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				18C9F1C91F25A3EC00561AF9 /* AES128Helper.h */,
+				18C9F1CA1F25A3EC00561AF9 /* AES128Helper.m */,
+			);
+			path = Encrypt;
+			sourceTree = "<group>";
+		};
+		18C9F1CC1F25A3EC00561AF9 /* SafeTools */ = {
+			isa = PBXGroup;
+			children = (
+				18C9F1CD1F25A3EC00561AF9 /* NSArray+Safe.h */,
+				18C9F1CE1F25A3EC00561AF9 /* NSArray+Safe.m */,
+				18C9F1CF1F25A3EC00561AF9 /* NSDictionary+Safe.h */,
+				18C9F1D01F25A3EC00561AF9 /* NSDictionary+Safe.m */,
+				18C9F1D11F25A3EC00561AF9 /* NSMutableArray+Safe.h */,
+				18C9F1D21F25A3EC00561AF9 /* NSMutableArray+Safe.m */,
+				18C9F1D31F25A3EC00561AF9 /* NSMutableDictionary+Safe.h */,
+				18C9F1D41F25A3EC00561AF9 /* NSMutableDictionary+Safe.m */,
+				18C9F1D51F25A3EC00561AF9 /* NSObject+ImpChangeTool.h */,
+				18C9F1D61F25A3EC00561AF9 /* NSObject+ImpChangeTool.m */,
+				18C9F1D71F25A3EC00561AF9 /* SafeTool.h */,
+			);
+			path = SafeTools;
+			sourceTree = "<group>";
+		};
+		3D71E0A92259A29B62F021E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9EF25638C62D27EB2ED3470 /* libPods-BSKYCoreDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B31515601F25EDA1001F8140 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B315156C1F2601C7001F8140 /* BSClientManager.h */,
+				B315156D1F2601C7001F8140 /* BSClientManager.m */,
+				B31515611F25EE65001F8140 /* BSNetConfig.h */,
+				B31515621F25EE65001F8140 /* BSNetConfig.m */,
+				B31515641F25F08C001F8140 /* BSBaseRequest.h */,
+				B31515651F25F08C001F8140 /* BSBaseRequest.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B31515801F271615001F8140 /* NetworkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B31515811F271629001F8140 /* BSDemoRequest.h */,
+				B31515821F271629001F8140 /* BSDemoRequest.m */,
+			);
+			name = NetworkDemo;
+			sourceTree = "<group>";
+		};
+		B33286431F29C63900278914 /* ThreadPool */ = {
+			isa = PBXGroup;
+			children = (
+				B33286441F29C63900278914 /* XPersistentThreadPool.h */,
+				B33286451F29C63900278914 /* XPersistentThreadPool.m */,
+			);
+			path = ThreadPool;
+			sourceTree = "<group>";
+		};
+		B33286471F2B2DBF00278914 /* BSRouter */ = {
+			isa = PBXGroup;
+			children = (
+				B33286481F2B2DBF00278914 /* BSRouter.h */,
+				B33286491F2B2DBF00278914 /* BSRouter.m */,
+			);
+			path = BSRouter;
+			sourceTree = "<group>";
+		};
+		C357F6CB28310F65C0BF0BDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEC50FEEE7B37BD26134CDF3 /* Pods-BSKYCoreDemo.debug.xcconfig */,
+				CC9F10E01405698E8FDF3AA8 /* Pods-BSKYCoreDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18A974251F21D11400C060F4 /* BSKYCoreDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A974531F21D11400C060F4 /* Build configuration list for PBXNativeTarget "BSKYCoreDemo" */;
+			buildPhases = (
+				C1FEE7F81B49C3EBEB58FDD3 /* [CP] Check Pods Manifest.lock */,
+				18A974221F21D11400C060F4 /* Sources */,
+				18A974231F21D11400C060F4 /* Frameworks */,
+				18A974241F21D11400C060F4 /* Resources */,
+				8CA7E64DA2F0D1D86DAEAEA7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BSKYCoreDemo;
+			productName = BSKYCoreDemo;
+			productReference = 18A974261F21D11400C060F4 /* BSKYCoreDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18A9743E1F21D11400C060F4 /* BSKYCoreDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A974561F21D11400C060F4 /* Build configuration list for PBXNativeTarget "BSKYCoreDemoTests" */;
+			buildPhases = (
+				18A9743B1F21D11400C060F4 /* Sources */,
+				18A9743C1F21D11400C060F4 /* Frameworks */,
+				18A9743D1F21D11400C060F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A974411F21D11400C060F4 /* PBXTargetDependency */,
+			);
+			name = BSKYCoreDemoTests;
+			productName = BSKYCoreDemoTests;
+			productReference = 18A9743F1F21D11400C060F4 /* BSKYCoreDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18A974491F21D11400C060F4 /* BSKYCoreDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A974591F21D11400C060F4 /* Build configuration list for PBXNativeTarget "BSKYCoreDemoUITests" */;
+			buildPhases = (
+				18A974461F21D11400C060F4 /* Sources */,
+				18A974471F21D11400C060F4 /* Frameworks */,
+				18A974481F21D11400C060F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A9744C1F21D11400C060F4 /* PBXTargetDependency */,
+			);
+			name = BSKYCoreDemoUITests;
+			productName = BSKYCoreDemoUITests;
+			productReference = 18A9744A1F21D11400C060F4 /* BSKYCoreDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18A9741E1F21D11400C060F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ky;
+				TargetAttributes = {
+					18A974251F21D11400C060F4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = HU5AFDP7BC;
+						ProvisioningStyle = Automatic;
+					};
+					18A9743E1F21D11400C060F4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18A974251F21D11400C060F4;
+					};
+					18A974491F21D11400C060F4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18A974251F21D11400C060F4;
+					};
+				};
+			};
+			buildConfigurationList = 18A974211F21D11400C060F4 /* Build configuration list for PBXProject "BSKYCoreDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18A9741D1F21D11400C060F4;
+			productRefGroup = 18A974271F21D11400C060F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18A974251F21D11400C060F4 /* BSKYCoreDemo */,
+				18A9743E1F21D11400C060F4 /* BSKYCoreDemoTests */,
+				18A974491F21D11400C060F4 /* BSKYCoreDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A974241F21D11400C060F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A974391F21D11400C060F4 /* LaunchScreen.storyboard in Resources */,
+				18A974361F21D11400C060F4 /* Assets.xcassets in Resources */,
+				18A974341F21D11400C060F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A9743D1F21D11400C060F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A974481F21D11400C060F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CA7E64DA2F0D1D86DAEAEA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BSKYCoreDemo/Pods-BSKYCoreDemo-resources.sh",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BSKYCoreDemo/Pods-BSKYCoreDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1FEE7F81B49C3EBEB58FDD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BSKYCoreDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A974221F21D11400C060F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C9F1E41F25A3EC00561AF9 /* NSObject+ImpChangeTool.m in Sources */,
+				B31515661F25F08C001F8140 /* BSBaseRequest.m in Sources */,
+				18C9F1E21F25A3EC00561AF9 /* NSMutableArray+Safe.m in Sources */,
+				B332864A1F2B2DBF00278914 /* BSRouter.m in Sources */,
+				B396D9FF1F8CAB4F00896F3D /* UIViewController+BSKY.m in Sources */,
+				B392EC331F25EB9B000104BF /* NSString+BSKY.m in Sources */,
+				18C9F1D81F25A3EC00561AF9 /* CLLocation+BSKY.m in Sources */,
+				18C9F1DC1F25A3EC00561AF9 /* UIFont+BSKY.m in Sources */,
+				B315156E1F2601C7001F8140 /* BSClientManager.m in Sources */,
+				18C9F1DF1F25A3EC00561AF9 /* AES128Helper.m in Sources */,
+				18C9F1E11F25A3EC00561AF9 /* NSDictionary+Safe.m in Sources */,
+				18C9F1DE1F25A3EC00561AF9 /* BSLocationProvider.m in Sources */,
+				18A974311F21D11400C060F4 /* ViewController.m in Sources */,
+				18C9F1DA1F25A3EC00561AF9 /* UIAlertView+BSKY.m in Sources */,
+				B31515831F271629001F8140 /* BSDemoRequest.m in Sources */,
+				B31515631F25EE65001F8140 /* BSNetConfig.m in Sources */,
+				18A9742E1F21D11400C060F4 /* AppDelegate.m in Sources */,
+				18C9F1E31F25A3EC00561AF9 /* NSMutableDictionary+Safe.m in Sources */,
+				18C9F1D91F25A3EC00561AF9 /* UIActionSheet+BSKY.m in Sources */,
+				18C9F1DD1F25A3EC00561AF9 /* UIView+BSKY.m in Sources */,
+				18C9F1DB1F25A3EC00561AF9 /* UIColor+BSKY.m in Sources */,
+				18A9742B1F21D11400C060F4 /* main.m in Sources */,
+				B33286461F29C63900278914 /* XPersistentThreadPool.m in Sources */,
+				18C9F1E01F25A3EC00561AF9 /* NSArray+Safe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A9743B1F21D11400C060F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A974441F21D11400C060F4 /* BSKYCoreDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A974461F21D11400C060F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A9744F1F21D11400C060F4 /* BSKYCoreDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18A974411F21D11400C060F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A974251F21D11400C060F4 /* BSKYCoreDemo */;
+			targetProxy = 18A974401F21D11400C060F4 /* PBXContainerItemProxy */;
+		};
+		18A9744C1F21D11400C060F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A974251F21D11400C060F4 /* BSKYCoreDemo */;
+			targetProxy = 18A9744B1F21D11400C060F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18A974321F21D11400C060F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A974331F21D11400C060F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18A974371F21D11400C060F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A974381F21D11400C060F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18A974511F21D11400C060F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18A974521F21D11400C060F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18A974541F21D11400C060F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC50FEEE7B37BD26134CDF3 /* Pods-BSKYCoreDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HU5AFDP7BC;
+				GCC_PREFIX_HEADER = BSKYCoreDemo/BSKYCoreDemo.pch;
+				INFOPLIST_FILE = BSKYCoreDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BS.BSKYCoreDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18A974551F21D11400C060F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9F10E01405698E8FDF3AA8 /* Pods-BSKYCoreDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HU5AFDP7BC;
+				GCC_PREFIX_HEADER = BSKYCoreDemo/BSKYCoreDemo.pch;
+				INFOPLIST_FILE = BSKYCoreDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BS.BSKYCoreDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18A974571F21D11400C060F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BSKYCoreDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BS.BSKYCoreDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSKYCoreDemo.app/BSKYCoreDemo";
+			};
+			name = Debug;
+		};
+		18A974581F21D11400C060F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BSKYCoreDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BS.BSKYCoreDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSKYCoreDemo.app/BSKYCoreDemo";
+			};
+			name = Release;
+		};
+		18A9745A1F21D11400C060F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BSKYCoreDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BS.BSKYCoreDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BSKYCoreDemo;
+			};
+			name = Debug;
+		};
+		18A9745B1F21D11400C060F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BSKYCoreDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BS.BSKYCoreDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BSKYCoreDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A974211F21D11400C060F4 /* Build configuration list for PBXProject "BSKYCoreDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A974511F21D11400C060F4 /* Debug */,
+				18A974521F21D11400C060F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A974531F21D11400C060F4 /* Build configuration list for PBXNativeTarget "BSKYCoreDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A974541F21D11400C060F4 /* Debug */,
+				18A974551F21D11400C060F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A974561F21D11400C060F4 /* Build configuration list for PBXNativeTarget "BSKYCoreDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A974571F21D11400C060F4 /* Debug */,
+				18A974581F21D11400C060F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A974591F21D11400C060F4 /* Build configuration list for PBXNativeTarget "BSKYCoreDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A9745A1F21D11400C060F4 /* Debug */,
+				18A9745B1F21D11400C060F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18A9741E1F21D11400C060F4 /* Project object */;
+}
